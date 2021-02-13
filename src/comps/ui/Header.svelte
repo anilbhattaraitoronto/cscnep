@@ -16,10 +16,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
-        top: 0;
+
         max-width: 1200px;
         margin: auto;
+    }
+    header h1 {
+        margin-left: 20px;
     }
     a {
         display: inline-block;

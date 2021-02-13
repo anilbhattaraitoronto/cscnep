@@ -6,6 +6,7 @@
     import About from "./comps/pages/About.svelte";
     import Contact from "./comps/pages/Contact.svelte";
     import Footer from "./comps/ui/Footer.svelte";
+    import Sidebar from "./comps/ui/Sidebar.svelte";
 
     let routes = {
         "/": Home,
@@ -21,8 +22,13 @@
 </div>
 
 <main class="container">
-    <main class="pages">
-        <Router {routes} />
+    <main class="main-content">
+        <div class="pages">
+            <Router {routes} />
+        </div>
+        <div class="sidebar">
+            <Sidebar />
+        </div>
     </main>
     <footer>
         <Footer />
@@ -42,5 +48,20 @@
         margin: auto;
         background: lightgray;
         box-shadow: 0 1px 0 gray;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+    .main-content {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 20px;
+        min-height: 80vh;
+    }
+    @media (max-width: 700px) {
+        .main-content {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
