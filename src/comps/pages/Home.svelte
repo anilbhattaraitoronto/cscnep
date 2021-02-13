@@ -16,6 +16,7 @@
             </figcaption>
         </figure>
     </div>
+    <h2>Welcome to Chitwan Society of Canada</h2>
 </main>
 
 <style>
