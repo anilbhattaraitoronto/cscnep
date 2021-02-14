@@ -27,7 +27,4 @@
         list-style: none;
         padding: 8px 0;
     }
-    b {
-        color: rgb(152, 146, 146);
-    }
 </style>

@@ -26,12 +26,15 @@
         </figure>
     </div>
     <div class="objectives">
-        <ul>
+        <div>
             <h2>Our Objectives</h2>
-            {#each siteData.objectives as objective}
-                <li>{objective}</li>
-            {/each}
-        </ul>
+            <ul>
+                {#each siteData.objectives as objective}
+                    <li>{objective}</li>
+                {/each}
+            </ul>
+        </div>
+
         <img
             src="https://images.unsplash.com/photo-1602129346879-b36d26670330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             alt="Rice paddy in Chitwan"
