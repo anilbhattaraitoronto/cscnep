@@ -3,7 +3,6 @@
 </script>
 
 <main>
-    <h1>{siteData.siteTitle}</h1>
     <div>
         <figure>
             <img
@@ -49,10 +48,11 @@
         grid-template-columns: 2fr 1fr;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin: 40px 0 20px 0;
     }
     .objective-image {
         max-width: 100%;
+        padding-right: 8px;
     }
     ul {
         padding: 20px;

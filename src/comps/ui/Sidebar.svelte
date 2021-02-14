@@ -14,6 +14,8 @@
 <style>
     main {
         text-align: center;
+        padding: 8px 0;
+        background: rgb(245, 242, 242);
     }
     li {
         list-style: none;
