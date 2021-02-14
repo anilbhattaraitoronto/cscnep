@@ -27,4 +27,9 @@
         list-style: none;
         padding: 8px 0;
     }
+    @media (max-width: 700px) {
+        main {
+            text-align: left;
+        }
+    }
 </style>

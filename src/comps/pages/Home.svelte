@@ -78,4 +78,9 @@
         padding: 16px 0;
         line-height: 1.6;
     }
+    @media (max-width: 500px) {
+        .objectives {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
