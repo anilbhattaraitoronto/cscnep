@@ -13,15 +13,21 @@
 
 <style>
     main {
-        text-align: center;
-        padding: 8px 0;
+        text-align: right;
+        padding: 0 8px;
         background: rgb(252, 250, 250);
+        letter-spacing: 1px;
+        font-size: 95%;
+    }
+    h2 {
+        padding-bottom: 20px;
+        color: rgb(101, 99, 99);
     }
     li {
         list-style: none;
         padding: 8px 0;
     }
     b {
-        color: rgb(128, 125, 125);
+        color: rgb(152, 146, 146);
     }
 </style>

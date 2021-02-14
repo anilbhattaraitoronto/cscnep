@@ -63,7 +63,7 @@
         padding-right: 8px;
     }
     ul {
-        padding: 20px;
+        padding: 20px 0;
         margin-top: 20px;
     }
     li {
