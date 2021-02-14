@@ -42,5 +42,6 @@
         color: red;
         font-style: italic;
         letter-spacing: 1px;
+        font-weight: 400;
     }
 </style>
