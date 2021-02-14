@@ -1,19 +1,18 @@
+<script>
+    export let homeData;
+</script>
+
 <main>
+    <h2>Executive</h2>
     <ul>
-        <h2>Executive Body</h2>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
-        <li>Man Poudel</li>
+        {#each homeData.execCommittee as mem}
+            <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>
+        {/each}
     </ul>
+    <div class="mission">
+        <h3>Our Mission</h3>
+        <p>{homeData.mission}</p>
+    </div>
 </main>
 
 <style>

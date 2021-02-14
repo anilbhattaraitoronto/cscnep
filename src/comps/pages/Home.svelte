@@ -1,4 +1,9 @@
+<script>
+    export let siteData;
+</script>
+
 <main>
+    <h1>{siteData.siteTitle}</h1>
     <div class="landing-image">
         <figure>
             <img
@@ -16,7 +21,12 @@
             </figcaption>
         </figure>
     </div>
-    <h2>Welcome to Chitwan Society of Canada</h2>
+    <ul>
+        <h2>Our Objectives</h2>
+        {#each siteData.objectives as objective}
+            <li>{objective}</li>
+        {/each}
+    </ul>
 </main>
 
 <style>

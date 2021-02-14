@@ -1,5 +1,6 @@
 <script>
     import Router from "svelte-spa-router";
+    import { wrap } from "svelte-spa-router/wrap";
     import Header from "./comps/ui/Header.svelte";
     //importing pages
     import Home from "./comps/pages/Home.svelte";
@@ -7,14 +8,19 @@
     import Contact from "./comps/pages/Contact.svelte";
     import Footer from "./comps/ui/Footer.svelte";
     import Sidebar from "./comps/ui/Sidebar.svelte";
+    import { siteData } from "./data.js";
+    console.log(siteData);
 
     let routes = {
-        "/": Home,
+        "/": wrap({
+            component: Home,
+            props: {
+                siteData,
+            },
+        }),
         "/about": About,
         "/contact": Contact,
     };
-
-    export let siteData;
 </script>
 
 <div class="header">
@@ -27,7 +33,7 @@
             <Router {routes} />
         </div>
         <div class="sidebar">
-            <Sidebar />
+            <Sidebar homeData={siteData} />
         </div>
     </main>
     <footer>
@@ -46,8 +52,8 @@
     .header {
         width: 100%;
         margin: auto;
-        background: lightgray;
-        box-shadow: 0 1px 0 gray;
+        background: rgb(252, 249, 249);
+        box-shadow: 0 1px 0 rgb(194, 189, 189);
         position: sticky;
         top: 0;
         z-index: 20;
