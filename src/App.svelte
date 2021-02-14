@@ -9,7 +9,6 @@
     import Footer from "./comps/ui/Footer.svelte";
     import Sidebar from "./comps/ui/Sidebar.svelte";
     import { siteData } from "./data.js";
-    console.log(siteData);
 
     let routes = {
         "/": wrap({
