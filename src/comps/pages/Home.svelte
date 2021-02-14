@@ -49,6 +49,7 @@
     .landing-image {
         display: block;
         width: 100%;
+        height: 100%;
         margin: auto;
     }
     figcaption {
@@ -65,6 +66,7 @@
     }
     .objective-image {
         max-width: 100%;
+        max-height: 100%;
         padding-right: 8px;
     }
     ul {
