@@ -4,12 +4,13 @@
 
 <main>
     <h1>{siteData.siteTitle}</h1>
-    <div class="landing-image">
+    <div>
         <figure>
             <img
                 src="https://images.unsplash.com/photo-1562462159-bc2c0c305fdb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1258&q=80"
                 alt="Setting sun in Chitwan National Park"
                 title="Setting sun in Chitwan National Park"
+                class="landing-image"
             />
             <figcaption>
                 Setting sun reflected on Rapti River in Chitwan National Park.
@@ -21,18 +22,40 @@
             </figcaption>
         </figure>
     </div>
-    <ul>
-        <h2>Our Objectives</h2>
-        {#each siteData.objectives as objective}
-            <li>{objective}</li>
-        {/each}
-    </ul>
+    <div class="objectives">
+        <img
+            src="https://images.unsplash.com/photo-1602129346879-b36d26670330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt=""
+            class="objective-image"
+        />
+        <ul>
+            <h2>Our Objectives</h2>
+            {#each siteData.objectives as objective}
+                <li>{objective}</li>
+            {/each}
+        </ul>
+    </div>
 </main>
 
 <style>
-    img {
+    .landing-image {
         display: block;
         width: 100%;
         margin: auto;
+    }
+    .objectives {
+        background: lightgray;
+    }
+    .objective-image {
+        max-width: 100%;
+    }
+    ul {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    li {
+        list-style: none;
+        padding: 16px 0;
+        line-height: 1.6;
     }
 </style>

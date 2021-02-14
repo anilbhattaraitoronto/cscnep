@@ -9,10 +9,6 @@
             <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>
         {/each}
     </ul>
-    <div class="mission">
-        <h3>Our Mission</h3>
-        <p>{homeData.mission}</p>
-    </div>
 </main>
 
 <style>
@@ -21,5 +17,6 @@
     }
     li {
         list-style: none;
+        padding: 8px 0;
     }
 </style>

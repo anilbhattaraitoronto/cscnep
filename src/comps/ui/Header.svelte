@@ -18,6 +18,7 @@
         align-items: center;
         max-width: 1200px;
         margin: auto;
+        padding: 16px 0;
     }
     header h1 {
         margin-left: 20px;
