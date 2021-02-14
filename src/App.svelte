@@ -52,7 +52,7 @@
     .header {
         width: 100%;
         margin: auto;
-        background: rgb(252, 249, 249);
+        background: rgb(252, 250, 250);
         box-shadow: 0 1px 0 rgb(194, 189, 189);
         position: sticky;
         top: 0;

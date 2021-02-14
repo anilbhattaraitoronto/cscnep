@@ -13,10 +13,10 @@
             />
             <figcaption>
                 Setting sun reflected on Rapti River in Chitwan National Park.
-                <i>Source</i>: Meera Pankhania,
+                <i>Source</i>:
                 <a
                     href="https://images.unsplash.com/photo-1562462159-bc2c0c305fdb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1258&q=80"
-                    target="_blank">Unsplash photo</a
+                    target="_blank">Meera Pankhania</a
                 >
             </figcaption>
         </figure>
@@ -42,8 +42,12 @@
         width: 100%;
         margin: auto;
     }
+    figcaption {
+        margin-top: 20px;
+        font-size: 14px;
+    }
     .objectives {
-        background: rgb(244, 240, 240);
+        background: rgb(252, 250, 250);
         display: grid;
         grid-template-columns: 2fr 1fr;
         justify-content: center;

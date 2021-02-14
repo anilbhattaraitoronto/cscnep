@@ -31,7 +31,7 @@
     }
     .masthead {
         text-align: center;
-        font-size: calc(4vw + 10px);
+        font-size: calc(3vw + 10px);
         letter-spacing: 12px;
         color: rgb(101, 99, 99);
     }
