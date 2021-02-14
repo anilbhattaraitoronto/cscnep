@@ -23,17 +23,17 @@
         </figure>
     </div>
     <div class="objectives">
-        <img
-            src="https://images.unsplash.com/photo-1602129346879-b36d26670330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            alt=""
-            class="objective-image"
-        />
         <ul>
             <h2>Our Objectives</h2>
             {#each siteData.objectives as objective}
                 <li>{objective}</li>
             {/each}
         </ul>
+        <img
+            src="https://images.unsplash.com/photo-1602129346879-b36d26670330?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt=""
+            class="objective-image"
+        />
     </div>
 </main>
 
@@ -44,7 +44,12 @@
         margin: auto;
     }
     .objectives {
-        background: lightgray;
+        background: rgb(244, 240, 240);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
     }
     .objective-image {
         max-width: 100%;
