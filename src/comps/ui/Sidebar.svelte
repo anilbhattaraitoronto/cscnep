@@ -31,6 +31,7 @@
         padding: 8px;
         margin: 4px auto;
         background: white;
+        box-shadow: 1px 1px 1px lightgray;
         border: 1px solid transparent;
         transition: 250ms all ease-in-out;
     }
