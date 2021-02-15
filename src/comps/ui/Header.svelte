@@ -36,7 +36,7 @@
         color: rgb(101, 99, 99);
     }
     .masthead::after {
-        content: "Chitwan Society of Canada";
+        content: "Chitwan in Canada";
         display: block;
         font-size: 11px;
         color: red;

@@ -3,7 +3,7 @@
 </script>
 
 <main>
-    <h2>Executive</h2>
+    <h2>Executive (ad hoc)</h2>
     <ul>
         {#each homeData.execCommittee as mem}
             <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>
