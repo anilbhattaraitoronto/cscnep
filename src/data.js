@@ -8,7 +8,7 @@ export let siteData = {
     ],
     execCommittee: [
         {
-            name: "Mr. Man Paudel",
+            name: "Mr. Man Poudel",
             position: "Coordinator"
         },
         {
