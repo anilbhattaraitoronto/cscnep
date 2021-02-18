@@ -2,6 +2,9 @@
     export let homeData;
 </script>
 
+<svelte:head>
+    <title>🇳🇵 Members 🇳🇵</title>
+</svelte:head>
 <main>
     <h2>Members</h2>
     <ul>

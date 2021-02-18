@@ -6,7 +6,7 @@
         <!-- <a href="#/"> <h1>CSC</h1> </a> -->
         <h1 class="masthead">CSC</h1>
         <nav>
-            <a href="#/">Home</a>
+            <a href="#/">🏡</a>
             <a href="#/blogs">Blogs</a>
             <a href="#/events">Events </a>
             <a href="#/members">Members </a>

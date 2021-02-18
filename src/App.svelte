@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from "svelte";
+    import { members } from "./stores/membersStore.js";
     import Router from "svelte-spa-router";
     import { wrap } from "svelte-spa-router/wrap";
     import Header from "./comps/ui/Header.svelte";
@@ -12,6 +14,11 @@
     import Members from "./comps/pages/Members.svelte";
     import Events from "./comps/pages/Events.svelte";
     import Blogs from "./comps/pages/Blogs.svelte";
+
+    onMount(async () => {
+        $members = await siteData.members;
+        console.log($members);
+    });
 
     let routes = {
         "/": wrap({
