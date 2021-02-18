@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import { members } from "./stores/membersStore.js";
+    import { upcomingEvents } from "./stores/eventsStore.js";
     import Router from "svelte-spa-router";
     import { wrap } from "svelte-spa-router/wrap";
     import Header from "./comps/ui/Header.svelte";
@@ -10,16 +10,18 @@
     import Contact from "./comps/pages/Contact.svelte";
     import Footer from "./comps/ui/Footer.svelte";
     import Sidebar from "./comps/ui/Sidebar.svelte";
-    import { siteData } from "./data.js";
+    // import { siteData } from "./data.js";
     import Members from "./comps/pages/Members.svelte";
     import Events from "./comps/pages/Events.svelte";
     import Blogs from "./comps/pages/Blogs.svelte";
-
-    onMount(async () => {
-        $members = await siteData.members;
-        console.log($members);
+    export let siteData;
+    $upcomingEvents = siteData.events;
+    onMount(() => {
+        fetch("data/data.json")
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
     });
-
     let routes = {
         "/": wrap({
             component: Home,
@@ -51,7 +53,10 @@
             <Router {routes} />
         </div>
         <div class="sidebar">
-            <Sidebar homeData={siteData} />
+            <Sidebar
+                execCommittee={siteData.execCommittee}
+                events={$upcomingEvents}
+            />
         </div>
     </main>
     <footer>
