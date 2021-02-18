@@ -3,6 +3,12 @@
 </script>
 
 <main>
+    <h2>Upcoming events</h2>
+    <ul>
+        {#each homeData.events as event}
+            <li>{event.title}</li>
+        {/each}
+    </ul>
     <h2>Executive (ad hoc) Committee</h2>
     <ul>
         {#each homeData.execCommittee as mem}

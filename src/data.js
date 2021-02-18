@@ -6,6 +6,17 @@ export let siteData = {
         "Provide technical, socio-cultural, economic, environmental, and educational support to the needy areas",
         "Build a network across Canada for the people originated from the region or deemed resident of Chitwan"
     ],
+    events: [
+        {
+            title: "General Assembly",
+            organizer: "CSC",
+            venue: "Toronto, Ontario",
+            event_date: "30 August 2021",
+            description: "An event to remember",
+            event_image: "images/events/general_assembly_flyer.jpg",
+            sponsor:"Everest Realty, Canada"
+        }
+    ],
     execCommittee: [
         {
             name: "Mr. Man Poudel",
@@ -83,5 +94,20 @@ export let siteData = {
             name: "Mr. Uday Dura",
             position: "Member"
         },
+    ],
+    members: [
+        {
+            name: "Dr Anil Bhattarai",
+            profilePic: "images/members/cat.png",
+            chitwanLocation: "Tandi",
+            bio: "Computer programmer, social researcher"
+        },
+        {
+            name: "Mr Man Poudel",
+            profilePic: "images/members/elephant.svg",
+            chitwanLocation: "Tandi",
+            bio: "Accountant and business owner in Toronto, wide involvement in social activities."
+        },
+       
     ]
 }

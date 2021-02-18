@@ -9,6 +9,9 @@
     import Footer from "./comps/ui/Footer.svelte";
     import Sidebar from "./comps/ui/Sidebar.svelte";
     import { siteData } from "./data.js";
+    import Members from "./comps/pages/Members.svelte";
+    import Events from "./comps/pages/Events.svelte";
+    import Blogs from "./comps/pages/Blogs.svelte";
 
     let routes = {
         "/": wrap({
@@ -17,6 +20,15 @@
                 siteData,
             },
         }),
+        "/blogs": Blogs,
+        "/events": Events,
+        "/members": wrap({
+            component: Members,
+            props: {
+                homeData: siteData,
+            },
+        }),
+
         "/about": About,
         "/contact": Contact,
     };

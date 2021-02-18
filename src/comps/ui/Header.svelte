@@ -7,8 +7,9 @@
         <h1 class="masthead">CSC</h1>
         <nav>
             <a href="#/">Home</a>
-            <a href="#/about">About</a>
-            <a href="#/contact">Contact </a>
+            <a href="#/blogs">Blogs</a>
+            <a href="#/events">Events </a>
+            <a href="#/members">Members </a>
         </nav>
     </header>
 </main>
