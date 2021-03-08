@@ -1,5 +1,5 @@
 <script>
-    export let homeData;
+    import { staticData } from "../../stores/staticData";
 </script>
 
 <svelte:head>
@@ -8,17 +8,22 @@
 <main>
     <h2>Members</h2>
     <ul>
-        {#each homeData.members as mem}
-            <div class="member">
-                <h3>{mem.name}</h3>
-                <img src={mem.profilePic} alt="{mem.name} profile picture" />
-                <p>Chitwan Location: {mem.chitwanLocation}</p>
-                <details>
-                    <summary>Bio</summary>
-                    <p>{mem.bio}</p>
-                </details>
-            </div>
-        {/each}
+        {#if staticData}
+            {#each $staticData.members as mem}
+                <div class="member">
+                    <h3>{mem.name}</h3>
+                    <img
+                        src={mem.profilePic}
+                        alt="{mem.name} profile picture"
+                    />
+                    <p>Chitwan Location: {mem.chitwanLocation}</p>
+                    <details>
+                        <summary>Bio</summary>
+                        <p>{mem.bio}</p>
+                    </details>
+                </div>
+            {/each}
+        {/if}
     </ul>
 </main>
 

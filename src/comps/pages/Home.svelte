@@ -1,5 +1,5 @@
 <script>
-    export let siteData;
+    import { staticData } from "../../stores/staticData.js";
 </script>
 
 <svelte:head>
@@ -29,9 +29,11 @@
         <div>
             <h2>Our Objectives</h2>
             <ul>
-                {#each siteData.objectives as objective}
-                    <li>{objective}</li>
-                {/each}
+                {#if $staticData}
+                    {#each $staticData.objectives as objective}
+                        <li>{objective}</li>
+                    {/each}
+                {/if}
             </ul>
         </div>
 

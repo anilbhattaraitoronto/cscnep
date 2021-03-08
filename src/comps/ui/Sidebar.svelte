@@ -1,22 +1,23 @@
 <script>
-    export let execCommittee = [];
-    export let events = [];
+    import { staticData } from "../../stores/staticData.js";
 </script>
 
-<main>
-    <h2>Upcoming events</h2>
-    <ul>
-        {#each events as event}
-            <li>{event.title}</li>
-        {/each}
-    </ul>
-    <h2>Executive (ad hoc) Committee</h2>
-    <ul>
-        {#each execCommittee as mem}
-            <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>
-        {/each}
-    </ul>
-</main>
+{#if $staticData}
+    <main>
+        <h2>Upcoming events</h2>
+        <ul>
+            {#each $staticData.events as event}
+                <li>{event.title}</li>
+            {/each}
+        </ul>
+        <h2>Executive (ad hoc) Committee</h2>
+        <ul>
+            {#each $staticData.execCommittee as mem}
+                <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>
+            {/each}
+        </ul>
+    </main>
+{/if}
 
 <style>
     main {
