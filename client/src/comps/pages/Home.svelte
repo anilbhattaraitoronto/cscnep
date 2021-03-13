@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>🇳🇵 CSC - Welcome 🇳🇵</title>
+    <title>CSC - Welcome</title>
 </svelte:head>
 <main>
     <div>

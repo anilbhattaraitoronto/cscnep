@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/anilbhattaraitoronto/cscnep/issues"
   },
-  "homepage": "https://github.com/anilbhattaraitoronto/cscnep#readme"
+  "homepage": "https://github.com/anilbhattaraitoronto/cscnep#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "better-sqlite3": "^7.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.5.0"
+  }
 }
