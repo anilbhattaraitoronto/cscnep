@@ -1,7 +1,7 @@
 /client/node_modules/
 /client/public/build/
 /client/scripts
-
+exclude_list.txt
 .DS_Store
 deploy.sh
 /node_modules/
