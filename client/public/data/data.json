@@ -20,7 +20,7 @@
     "execCommittee": [
         {
             "name": "Mr. Man Poudel",
-            "position": "Coordinator"
+            "position": "President"
         },
         {
             "name": "Dr. Kanchan Devkota",
@@ -32,67 +32,63 @@
         },
         {
             "name": "Mr. Dhundi Raj Pandey",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Dr. Tulsi Dharel",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Debendra Subedi",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Dr. Deepak Sapkota",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Dr. Purna Kandel",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Ms. Bimala Sapkota",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Sailendra Chapagain",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Rajan Shree Chhatkuli",
-            "position": "Member"
-        },
-        {
-            "name": "Mr. Binod Shrestha",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Yadav Sapkota",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Ms. Sushila Pandey",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Dr. Maya Subedi",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr.Bednidhi Gautam",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Chandika Dawadi",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Ms. Sanjivna Khanal",
-            "position": "Member"
+            "position": "Director"
         },
         {
             "name": "Mr. Uday Dura",
-            "position": "Member"
+            "position": "Director"
         }
     ],
     "members": [

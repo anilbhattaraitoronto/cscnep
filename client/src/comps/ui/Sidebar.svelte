@@ -10,7 +10,7 @@
                 <li>{event.title}</li>
             {/each}
         </ul>
-        <h2>Executive (ad hoc) Committee</h2>
+        <h2>Board of Directors</h2>
         <ul>
             {#each $staticData.execCommittee as mem}
                 <li>{mem.name}<br /> <em><b>{mem.position}</b></em></li>

@@ -6,7 +6,12 @@
         <!-- <a href="#/"> <h1>CSC</h1> </a> -->
         <h1 class="masthead">
             <a href="#/">
-                <img src="/images/logo_nobg.png" alt="" class="logo" />
+                <img
+                    src="/images/logo_nobg.png"
+                    alt="Chitwan Society of Canada logo"
+                    title="Chitwan Society of Canada Logo"
+                    class="logo"
+                />
             </a>
         </h1>
         <nav>
@@ -30,6 +35,9 @@
         display: block;
         max-width: 50px;
         cursor: pointer;
+        padding: 4px;
+        background: rgb(235, 229, 229);
+        border-radius: 50%;
     }
     header h1 {
         margin-left: 20px;

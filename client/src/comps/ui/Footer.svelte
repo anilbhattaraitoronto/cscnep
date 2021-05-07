@@ -1,7 +1,7 @@
 <footer>
     <p>
-        &copy; Chitwan Society of Canada (CSC). 2021 - Present. All Rights
-        Reserved.
+        &copy; Chitwan Society of Canada (CSC) (Corporation# 1285818-5). 2021 -
+        Present. All Rights Reserved.
     </p>
 </footer>
 
